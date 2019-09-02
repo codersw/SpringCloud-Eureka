@@ -1,0 +1,8 @@
+spring:
+  security:
+    user:
+      name: shaowen
+      password: 123456
+  profiles:
+    active: dev
+
