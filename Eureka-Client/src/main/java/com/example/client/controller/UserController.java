@@ -1,10 +1,12 @@
 package com.example.client.controller;
 
 
+import com.example.client.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("user")
@@ -20,7 +22,7 @@ public class UserController {
 
     @GetMapping
     public List<User> get() {
-        List<User> list = new ArrayList<>();
+        List<User> list = new ArrayList<User>();
         list.add(new User(1L, "mrbird", "123456"));
         list.add(new User(2L, "scott", "123456"));
         log.info("获取用户信息 " + list);
