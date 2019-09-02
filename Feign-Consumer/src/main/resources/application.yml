@@ -1,0 +1,12 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: Server-Consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://shaowen:123456@localhost:8080/eureka/,http://shaowen:123456@localhost:8081/eureka/
+feign:
+  hystrix:
+    enabled: true
