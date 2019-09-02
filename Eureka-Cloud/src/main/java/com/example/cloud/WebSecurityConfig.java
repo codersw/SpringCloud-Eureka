@@ -6,7 +6,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 /**
- * 关闭CSRF
+ * 关闭防csrf攻击
  * @author shaowen
  */
 @EnableWebSecurity
