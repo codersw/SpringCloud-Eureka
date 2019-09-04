@@ -73,7 +73,7 @@ public class GatewayConfiguration {
         initCustomizedApis();
         initGatewayRules();
     }
-
+    // 注入自定义API分组
     private void initCustomizedApis() {
         Set<ApiDefinition> definitions = new HashSet<>();
         ApiDefinition api1 = new ApiDefinition("some_customized_api")
@@ -92,6 +92,7 @@ public class GatewayConfiguration {
         GatewayApiDefinitionManager.loadApiDefinitions(definitions);
     }
 
+    //注入定义route
     private void initGatewayRules() {
         Set<GatewayFlowRule> rules = new HashSet<>();
         rules.add(new GatewayFlowRule("aliyun_route")
@@ -144,6 +145,9 @@ public class GatewayConfiguration {
                 .setFieldName("pn")
             )
         );
+        /**
+         * 手动加载网关规则
+         */
         GatewayRuleManager.loadRules(rules);
     }
 }
