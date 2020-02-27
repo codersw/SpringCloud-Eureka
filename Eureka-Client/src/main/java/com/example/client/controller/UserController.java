@@ -17,14 +17,14 @@ public class UserController {
     @GetMapping("/{id:\\d+}")
     public User get(@PathVariable Long id) {
         log.info("获取用户id为 " + id + "的信息");
-        return new User(id, "mrbird", "123456");
+        return new User(id, "shaowen", "123456");
     }
 
     @GetMapping
     public List<User> get() {
         List<User> list = new ArrayList<User>();
-        list.add(new User(1L, "mrbird", "123456"));
-        list.add(new User(2L, "scott", "123456"));
+        list.add(new User(1L, "shaowen", "123456"));
+        list.add(new User(2L, "swen", "123456"));
         log.info("获取用户信息 " + list);
         return list;
     }

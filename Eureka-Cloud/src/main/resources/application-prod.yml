@@ -8,7 +8,7 @@ eureka:
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://shaowen:123456@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     registerWithEureka: false #是否将自己注册到eureka服务中
     fetchRegistry: false #是否重eureka服务中获取注册信息
   server:

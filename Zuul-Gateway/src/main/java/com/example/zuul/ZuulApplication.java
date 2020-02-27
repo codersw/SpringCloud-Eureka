@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 网关
+ * 网关入口
  * @author shaowen
  */
 @EnableZuulProxy
