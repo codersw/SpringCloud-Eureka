@@ -1,3 +1,5 @@
 spring:
+  application:
+    name: Server-Provider
   profiles:
-    active: clent
+    active: client

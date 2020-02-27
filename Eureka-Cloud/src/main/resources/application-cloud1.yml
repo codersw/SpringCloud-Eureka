@@ -1,8 +1,5 @@
 server:
-  port: 8080
-spring:
-  application:
-    name: Eureka-Server
+  port: 8081
 eureka:
   instance:
     hostname: localhost

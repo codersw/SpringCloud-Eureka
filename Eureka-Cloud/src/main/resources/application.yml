@@ -1,4 +1,5 @@
 spring:
+  application:
+    name: Eureka-Server
   profiles:
-    active: dev
-
+    active: cloud
