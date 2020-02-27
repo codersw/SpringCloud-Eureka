@@ -2,13 +2,13 @@ package com.example.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * 客户端微服务 真实服务
  * @author shaowen
  */
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
 public class ClientApplication {
 

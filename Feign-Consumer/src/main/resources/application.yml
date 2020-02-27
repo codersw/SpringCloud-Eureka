@@ -1,12 +1,12 @@
 server:
-  port: 9000
+  port: 8002
 spring:
   application:
     name: Server-Consumer
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: http://192.168.4.162:8080/eureka/
 feign:
   hystrix:
     enabled: true

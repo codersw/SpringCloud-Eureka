@@ -2,29 +2,20 @@ spring:
   application:
     name: Zuul-Gateway
 server:
-  port: 12580
+  port: 8000
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://shaowen:123456@localhost:8080/eureka/,http://shaowen:123456@localhost:8081/eureka/
+      defaultZone: http://localhost:8080/eureka/
 zuul:
   routes:
     api-a:
       path: /api-a/**
-      url: http://localhost:8082
+      url: http://localhost:8001
     api-b:
       path: /api-b/**
       serviceId: server-provider
     api-c:
       path: /api-c/**
       serviceId: server-consumer
-    api-d:
-      path: /api-c/user/1
-      serviceId: lol
-    api-e:
-      path: /api-e/**
-      url: forward:/test
-  ignored-services: server-consumer
-  sensitive-headers:
-  add-host-header: true
 
