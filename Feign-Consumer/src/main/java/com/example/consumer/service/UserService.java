@@ -13,17 +13,17 @@ import java.util.List;
 public interface UserService {
 
     @GetMapping("user/{id}")
-    public User get(@PathVariable("id") Long id);
+    User get(@PathVariable("id") Long id);
 
     @GetMapping("user")
-    public List<User> get();
+    List<User> get();
 
     @PostMapping("user")
-    public void add(@RequestBody User user);
+    void add(@RequestBody User user);
 
     @PutMapping("user")
-    public void update(@RequestBody User user);
+    void update(@RequestBody User user);
 
     @DeleteMapping("user/{id}")
-    public void delete(@PathVariable("id") Long id);
+    void delete(@PathVariable("id") Long id);
 }
