@@ -1,2 +1,2 @@
 # TNB-SpringCloud-Eureka
-学习SpringBoot,SpringCloud,SpringCloud Eureka, Zuul GateWay
+学习SpringBoot,SpringCloud,SpringCloud Feign,SpringCloud Eureka, Zuul GateWay
